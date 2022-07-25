@@ -1,23 +1,198 @@
-.header {
-  height: 200px;
-  background-color: #00cc99; }
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
 
-.footer {
-  height: 200px;
-  background-color: #00cc99; }
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
 
-.box {
-  width: 100px;
-  height: 100px;
-  background-color: red;
+body {
+  line-height: 1.5;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif,思源黑體; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+img {
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto; }
+
+header {
+  background-color: #AA0601; }
+
+.head {
+  width: 1296px;
+  margin: 0 auto; }
+
+.sub {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  transition: all 0.5s; }
-  .box:hover {
-    width: 200px;
-    background-color: RED; }
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.sub img {
+  width: 80px;
+  height: 48.75px;
+  margin: 16px 0 15.43px 0; }
+
+.list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 25px 0; }
+
+.pr-64 {
+  padding-right: 64px; }
+
+.list li a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 30px; }
+
+.list li a:hover {
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+  font-size: 26px;
+  font-weight: bold;
+  color: #000000; }
+
+footer {
+  background-color: #AA0601; }
+
+.ft {
+  width: 1296px;
+  margin: 0 auto; }
+
+.footer-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.footer-list li {
+  padding: 60px 48px 50px 0px; }
+
+.footer-list li a {
+  color: white;
+  text-decoration: none; }
+
+.footer-list li a:hover {
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+  font-weight: bold;
+  color: #000000; }
+
+.contact {
+  padding-bottom: 32px; }
+
+.contact img {
+  width: 36px;
+  height: 36px; }
+
+.contact li img {
+  margin-right: 22px; }
+
+.contact li a {
+  color: white;
+  font-size: 36px;
+  line-height: 54px;
+  text-decoration: none; }
+
+.contact li a:hover {
+  color: #0c21c7; }
+
+.txt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid white; }
+
+.icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 48px;
+  margin-left: 575px; }
+
+.icon li img:hover {
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+  -webkit-transform: scale(1.5);
+      -ms-transform: scale(1.5);
+          transform: scale(1.5); }
+
+.mr-32 {
+  margin-right: 32px; }
+
+.regsiter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 32px 0; }
+
+.regsiter p {
+  font-size: 16px;
+  line-height: 24px; }
+
+.mr-48 {
+  margin-right: 48px; }
+
+.regsiter ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.regsiter ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 21px; }
+
+.regsiter ul li a:hover {
+  color: #100f0f; }
 
 /*# sourceMappingURL=all.css.map */
