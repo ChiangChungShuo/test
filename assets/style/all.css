@@ -48,26 +48,29 @@ table {
           box-sizing: border-box; }
 
 img {
-  vertical-align: middle;
+  vertical-align: bottom;
   max-width: 100%;
   height: auto; }
 
 header {
   background-color: #AA0601; }
 
-.head {
-  width: 1296px;
-  margin: 0 auto; }
-
 .sub {
+  max-width: 1296px;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
 
-.sub img {
+.logo {
   width: 80px;
   height: 48.75px;
   margin: 16px 0 15.43px 0; }
@@ -76,7 +79,10 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 25px 0; }
+  padding: 25px 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .pr-64 {
   padding-right: 64px; }
@@ -84,8 +90,7 @@ header {
 .list li a {
   color: white;
   text-decoration: none;
-  font-size: 20px;
-  line-height: 30px; }
+  font-size: 20px; }
 
 .list li a:hover {
   -webkit-transition: all 1s;
@@ -144,7 +149,9 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-bottom: 1px solid white; }
+  border-bottom: 1px solid white;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
 
 .icon {
   display: -webkit-box;
@@ -194,5 +201,38 @@ footer {
 
 .regsiter ul li a:hover {
   color: #100f0f; }
+
+@media screen and (max-width: 992px) {
+  header {
+    width: 100%; }
+  .sub {
+    display: block;
+    padding: 0; }
+  .logo {
+    margin: 0 auto;
+    line-height: 88px;
+    margin-bottom: 15.43px; }
+    .logo img {
+      vertical-align: middle; }
+  .list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .list li {
+    width: 50%;
+    text-align: center;
+    border-top: 1px solid #FFF;
+    border-right: 1px solid #FFF; }
+  .list li a {
+    display: block;
+    margin: 0;
+    padding: 12px 0;
+    font-size: 16px; }
+  .four {
+    padding-right: 64px; }
+  footer {
+    width: 100%;
+    display: block;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; } }
 
 /*# sourceMappingURL=all.css.map */
