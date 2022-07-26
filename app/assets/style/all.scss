@@ -46,7 +46,7 @@ table {
     box-sizing: border-box;
 }
 img{
-vertical-align: middle;
+vertical-align: bottom;
 max-width:100%;
 height:auto;
 }
@@ -56,31 +56,35 @@ header{
   background-color:#AA0601 ;
 }
 
-.head{
-  width: 1296px;
-  margin: 0 auto;
-}
 .sub{
+  max-width: 1296px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
-.sub img{
+
+.logo {
   width: 80px;
   height: 48.75px;
   margin: 16px 0 15.43px 0;
 }
+
 .list{
   display: flex;
   padding: 25px 0;
+  justify-content: center;
 }
+
 .pr-64{
   padding-right: 64px;
 }
+
 .list li a{
   color: white;
   text-decoration:none;
   font-size: 20px;
-  line-height: 30px;
 }
 
 .list li a:hover{
@@ -137,6 +141,7 @@ footer{
 .txt{
   display: flex;
   border-bottom:1px solid white ;
+  flex-wrap: wrap;
 }
 .icon{
   display: flex;
@@ -176,4 +181,45 @@ footer{
 }
 .regsiter ul li a:hover{
   color: #100f0f;
+}
+
+@media screen and (max-width:992px){
+  header{
+    width: 100%;
+  }
+  .sub{
+    display: block;
+    padding: 0;
+  }
+  .logo{
+    margin: 0 auto;
+    line-height: 88px;
+    margin-bottom: 15.43px;
+    img{
+      vertical-align: middle;
+    }
+  }
+  .list{
+    flex-wrap: wrap;
+  }
+  .list li{
+    width: 50%;
+    text-align: center;
+    border-top: 1px solid #FFF;
+    border-right: 1px solid #FFF;
+  }
+  .list li a{
+    display: block;
+    margin: 0;
+    padding: 12px 0;
+    font-size: 16px;
+  }
+  .four{
+    padding-right: 64px;
+  }
+  footer{
+    width: 100%;
+     display: block;
+     flex-wrap: wrap;
+  }
 }
