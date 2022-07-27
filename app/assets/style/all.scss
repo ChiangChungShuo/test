@@ -122,12 +122,15 @@ footer{
 .footer{
   display: flex;
   justify-content: space-between;
-  
+  row-gap: 24px;
+  padding-top: 48px;
+  padding-bottom: 32px;
 }
 .footer-menu{
   display: flex;
+  align-items: center;
  li{
-  padding:60px 48px 36px 0;
+  padding:0 48px 0 0;
  }
  a{
   color: white;
@@ -136,10 +139,19 @@ footer{
 }
 .icon{
   display: flex;
-  margin-top: 48px;
-  li{
-    padding-left: 32px;
+  align-items: center;
+  img{
+    max-width: 48px;
   }
+  a{
+    display: block;
+    &:hover{
+      opacity: 0.8;
+    }
+  }
+}
+.ml-32{
+  margin-left: 32px;
 }
 .tel{
   font-size: 36px;
@@ -170,17 +182,18 @@ footer{
   padding-right: 48px;
 }
 @media screen and (max-width:767px) {
+  .footer{
+    padding-top: 24px;
+    padding-bottom: 24px;
+    width: 50%;
+  }
   .footer-menu{
     display: none;
   }
 .icon{
-  
-li{
-  padding-left: 8px;
-}
-  img{
-    max-width: 24px;
-  }
+ img{
+  max-width: 24px;
+ }
  }
 .tel{
   font-size: 16px;
