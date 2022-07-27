@@ -33,6 +33,9 @@ ol, ul {
 blockquote, q {
 	quotes: none;
 }
+a {
+  text-decoration: none;
+}
 blockquote:before, blockquote:after,
 q:before, q:after {
 	content: '';
@@ -50,176 +53,161 @@ vertical-align: bottom;
 max-width:100%;
 height:auto;
 }
-
-
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 12px;
+}
 header{
   background-color:#AA0601 ;
 }
-
-.sub{
-  max-width: 1296px;
-  margin: 0 auto;
+.wrap{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
 }
-
-.logo {
+.logo{
   width: 80px;
-  height: 48.75px;
-  margin: 16px 0 15.43px 0;
 }
-
-.list{
+.header-menu{
   display: flex;
-  padding: 25px 0;
-  justify-content: center;
-}
-
-.pr-64{
-  padding-right: 64px;
-}
-
-.list li a{
-  color: white;
-  text-decoration:none;
   font-size: 20px;
-}
+  li{
+    padding: 25px 32px;
+    a{
+      color: white;
 
-.list li a:hover{
-  transition: all 1s;
-  font-size: 26px;
-  font-weight: bold;
-  color:#000000;
+    }
+  }
+}
+.header-menu li:hover{
+  background-color: #ca130d;
+}
+@media screen and (max-width:767px) {
+  .wrap{
+    flex-direction: column;
+    padding: 12px 0;
+  }
+  .logo{
+    padding: 12px 0;
+
+  }
+.header-menu {
+  width: 100%;
+  flex-wrap: wrap;
+  li{
+    width: 50%;
+    padding: 12px 0;
+    text-align: center;
+    border-top: 1px solid white;
+    border-right: 1px solid #FFF;
+    }
+  a{
+    font-size: 16px;
+    display: block;
+    padding: 12px 0;
+  }
+}
+}
+.call{
+  color: white;
+}
+.mail{
+  color: white;
 }
 
 footer{
-  background-color:#AA0601 ;
+  background-color: #AA0601;
 }
-.ft {
-  width: 1296px;
-  margin: 0 auto;
-}
-.footer-list{
+.footer{
   display: flex;
-}
-.footer-list li{
-  padding:60px 48px 50px 0px;
-
-}
-.footer-list li a{
-  color: white;
-  text-decoration: none;
-}
-.footer-list li a:hover{
-  transition: all 1s;
-  font-weight: bold;
-  color:#000000;
-}
-
-.contact{
-  padding-bottom: 32px;
-}
-.contact img{
-  width: 36px;
-  height: 36px;
+  justify-content: space-between;
   
 }
-.contact li img{
- margin-right: 22px;
-}
-.contact li a{
-  color: white;
-  font-size: 36px;
-  line-height: 54px;
-  text-decoration: none;
-}
-.contact li a:hover{
-  color:rgb(12, 33, 199);
-}
-.txt{
+.footer-menu{
   display: flex;
-  border-bottom:1px solid white ;
-  flex-wrap: wrap;
+ li{
+  padding:60px 48px 36px 0;
+ }
+ a{
+  color: white;
+  font-size: 16px;
+ }
 }
 .icon{
   display: flex;
-  margin-top:48px;
-  margin-left:575px ;
+  margin-top: 48px;
+  li{
+    padding-left: 32px;
+  }
 }
-.icon li img:hover{
-  transition: all 1s;
-  transform: scale(1.5);
-  
+.tel{
+  font-size: 36px;
+  border-bottom: 1px solid white;
+  padding-bottom:32px ;
+  span{
+    font-size: 36px;
+    padding-right: 22px;
+  }
+  a{
+    color: white;
+  }
 }
-.mr-32{
-  margin-right: 32px;
-}
-.regsiter{
+.copyright{
+  color: white; 
+  width: 100%;
   display: flex;
-  color:white;
   justify-content: space-between;
   padding: 32px 0;
 }
-.regsiter p{
-  font-size: 16px;
-  line-height: 24px;
-  
-}
-.mr-48{
-  margin-right: 48px;
-}
-.regsiter ul {
+.service{
   display: flex;
+  a{
+    color: white; 
+   
+  }
 }
-.regsiter ul li a{
-  color: white;
-  text-decoration: none;
-  font-size: 14px;
-  line-height: 21px;
+.pr-48{
+  padding-right: 48px;
 }
-.regsiter ul li a:hover{
-  color: #100f0f;
+@media screen and (max-width:767px) {
+  .footer-menu{
+    display: none;
+  }
+.icon{
+  
+li{
+  padding-left: 8px;
+}
+  img{
+    max-width: 24px;
+  }
+ }
+.tel{
+  font-size: 16px;
+  padding-bottom: 16px;
+  width: auto;
+  span{
+    font-size: 16px;
+    padding-right: 11px;
+  }  
+}
+.copyright{
+  flex-direction: column;
+  padding-top: 16px;
+p{
+  font-size: 16px;
+}
+}
+.service{
+  font-size: 16px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+ li{
+  padding-top: 8px;
+ }
 }
 
-@media screen and (max-width:992px){
-  header{
-    width: 100%;
-  }
-  .sub{
-    display: block;
-    padding: 0;
-  }
-  .logo{
-    margin: 0 auto;
-    line-height: 88px;
-    margin-bottom: 15.43px;
-    img{
-      vertical-align: middle;
-    }
-  }
-  .list{
-    flex-wrap: wrap;
-  }
-  .list li{
-    width: 50%;
-    text-align: center;
-    border-top: 1px solid #FFF;
-    border-right: 1px solid #FFF;
-  }
-  .list li a{
-    display: block;
-    margin: 0;
-    padding: 12px 0;
-    font-size: 16px;
-  }
-  .four{
-    padding-right: 64px;
-  }
-  footer{
-    width: 100%;
-     display: block;
-     flex-wrap: wrap;
-  }
+
 }
