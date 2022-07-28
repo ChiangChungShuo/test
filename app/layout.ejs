@@ -8,11 +8,16 @@
     <meta name="robots" content="index, follow" />
     <!--讓GOOGLE更容易搜尋˙-->
     <title><%- title %></title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Roboto:wght@400;500&display=swap"
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
+
     <link rel="stylesheet" href="./assets/style/all.css" />
+    <link rel="stylesheet" href="./assets/style/<%- mycss %>" />
   </head>
 
   <body>
@@ -29,6 +34,7 @@
         </ul>
       </div>
     </header>
+
     <%- contents %>
 
     <footer>
@@ -74,7 +80,7 @@
 
         <div class="copyright">
           <p>Copyright © 2020 Glasses.All rights reserved.</p>
-          <ul class="service">
+          <ul class="service-footer">
             <li class="pr-48"><a href="#">隱私權政策</a></li>
             <li><a href="#">服務條款</a></li>
           </ul>

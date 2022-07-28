@@ -25,7 +25,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
   line-height: 1.5;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif,思源黑體;
+  font-family: sans-serif, 'Noto Sans TC';
 }
 ol, ul {
 	list-style: none;
@@ -51,7 +51,7 @@ table {
 img{
 vertical-align: bottom;
 max-width:100%;
-height:auto;
+
 }
 .container {
   max-width: 1320px;
@@ -170,7 +170,7 @@ footer{
   justify-content: space-between;
   padding: 32px 0;
 }
-.service{
+.service-footer{
   display: flex;
   a{
     color: white; 
@@ -208,7 +208,7 @@ p{
   font-size: 16px;
 }
 }
-.service{
+.service-footer{
   font-size: 16px;
   flex-direction: column;
   justify-content: flex-start;
