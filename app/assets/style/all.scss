@@ -119,18 +119,19 @@ header{
 footer{
   background-color: #AA0601;
 }
-.footer{
+.nav{
   display: flex;
   justify-content: space-between;
-  row-gap: 24px;
-  padding-top: 48px;
+  padding-top: 60px;
   padding-bottom: 32px;
+  border-bottom: 1px solid white;
 }
 .footer-menu{
   display: flex;
   align-items: center;
+  padding-bottom:36px ;
  li{
-  padding:0 48px 0 0;
+  padding-right: 48px;
  }
  a{
   color: white;
@@ -139,7 +140,6 @@ footer{
 }
 .icon{
   display: flex;
-  align-items: center;
   img{
     max-width: 48px;
   }
@@ -155,8 +155,6 @@ footer{
 }
 .tel{
   font-size: 36px;
-  border-bottom: 1px solid white;
-  padding-bottom:32px ;
   span{
     font-size: 36px;
     padding-right: 22px;
@@ -182,23 +180,22 @@ footer{
   padding-right: 48px;
 }
 @media screen and (max-width:767px) {
-  .footer{
-    padding-top: 24px;
-    padding-bottom: 24px;
-    width: 50%;
+  .nav{
+    padding: 24px 0;
   }
   .footer-menu{
     display: none;
   }
 .icon{
+  li{
+   margin-left: 8px;
+  }
  img{
   max-width: 24px;
  }
  }
 .tel{
   font-size: 16px;
-  padding-bottom: 16px;
-  width: auto;
   span{
     font-size: 16px;
     padding-right: 11px;
