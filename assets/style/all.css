@@ -1,4 +1,3 @@
-@charset "UTF-8";
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -26,7 +25,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
   line-height: 1.5;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif,思源黑體; }
+  font-family: sans-serif, 'Noto Sans TC'; }
 
 ol, ul {
   list-style: none; }
@@ -52,8 +51,7 @@ table {
 
 img {
   vertical-align: bottom;
-  max-width: 100%;
-  height: auto; }
+  max-width: 100%; }
 
 .container {
   max-width: 1320px;
@@ -181,11 +179,11 @@ footer {
           justify-content: space-between;
   padding: 32px 0; }
 
-.service {
+.service-footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
-  .service a {
+  .service-footer a {
     color: white; }
 
 .pr-48 {
@@ -213,7 +211,7 @@ footer {
     padding-top: 16px; }
     .copyright p {
       font-size: 16px; }
-  .service {
+  .service-footer {
     font-size: 16px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -225,7 +223,7 @@ footer {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start; }
-    .service li {
+    .service-footer li {
       padding-top: 8px; } }
 
 /*# sourceMappingURL=all.css.map */
