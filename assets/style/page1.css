@@ -111,7 +111,7 @@
     font-weight: 900;
     padding: 8px 0; }
 
-.suggest h2 {
+.recommend h2 {
   font-size: 48px;
   color: #650300;
   font-weight: bold;
@@ -119,12 +119,12 @@
   margin-top: 80px;
   margin-bottom: 48px; }
 
-.suggest ul {
+.recommend ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
 
-.suggest li {
+.recommend li {
   border: 1px solid #DEE2E6;
   -webkit-box-shadow: 1px 2px 3px 2px #00000029;
           box-shadow: 1px 2px 3px 2px #00000029;
@@ -132,17 +132,17 @@
   margin-bottom: 80px;
   padding-bottom: 16px; }
 
-.suggest p {
+.recommend p {
   font-size: 16px; }
 
-.suggest .name {
+.recommend .name {
   padding: 16px 0 8px 16px; }
 
-.suggest .ps {
+.recommend .ps {
   padding-left: 16px;
   padding-bottom: 72px; }
 
-.suggest span {
+.recommend span {
   font-size: 14px;
   color: #707070;
   padding-left: 16px; }
