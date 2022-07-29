@@ -91,9 +91,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
   .guild img {
     max-width: 100px;
     padding-bottom: 16px; }
@@ -101,14 +101,13 @@ img {
     color: #650300;
     font-weight: bold;
     font-size: 24px;
-    margin-right: 8px;
     line-height: 72px; }
   .guild p {
     width: 306px;
     font-size: 16px;
     text-align: start;
     margin-right: 24px;
-    margin-bottom: 80px; }
+    padding-bottom: 80px; }
 
 .classic h2 {
   font-size: 48px;
@@ -154,7 +153,8 @@ img {
   .joint ul {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    padding-bottom: 80px; }
   .joint img {
     width: 648px; }
   .joint p {
@@ -163,7 +163,6 @@ img {
     text-align: center;
     background-color: white;
     font-weight: 900;
-    margin-bottom: 80px;
     padding: 8px 0; }
 
 .suggest h2 {
@@ -248,5 +247,42 @@ img {
   padding-bottom: 8px;
   font-size: 16px;
   padding-top: 16px; }
+
+@media screen and (max-width: 767px) {
+  .main {
+    background-image: url(../images/home-header-sm.png); }
+  .guild {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .classic .classic-txt {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .joint {
+    background-image: url(../images/index-bg-md.png); }
+    .joint li {
+      padding-bottom: 24px; }
+    .joint ul {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+  .suggest ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .suggest li {
+    width: 46%; } }
 
 /*# sourceMappingURL=page1.css.map */
