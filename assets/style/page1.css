@@ -21,6 +21,8 @@
       padding: 6px 12px;
       background-color: #AA0601;
       border: none; }
+      .main .content a:hover {
+        opacity: 0.6; }
 
 .service {
   background-color: #FBF2F2;
@@ -76,6 +78,8 @@
   height: 416px;
   padding-right: 24px;
   padding-bottom: 8px; }
+  .classic img:hover {
+    opacity: 0.6; }
 
 .classic p {
   font-size: 48px;
@@ -186,6 +190,8 @@
   width: 65%;
   padding: 16px 0;
   margin-top: 48px; }
+  .center:hover {
+    opacity: 0.6; }
 
 .w636 {
   width: 636px;

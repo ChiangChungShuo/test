@@ -146,6 +146,8 @@ footer {
   .footer-menu a {
     color: white;
     font-size: 16px; }
+    .footer-menu a:hover {
+      opacity: 0.6; }
 
 .icon {
   display: -webkit-box;
@@ -168,6 +170,8 @@ footer {
     padding-right: 22px; }
   .tel a {
     color: white; }
+    .tel a:hover {
+      opacity: 0.6; }
 
 .copyright {
   color: white;
@@ -179,6 +183,8 @@ footer {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 32px 0; }
+  .copyright a:hover {
+    opacity: 0.6; }
 
 .service-footer {
   display: -webkit-box;
