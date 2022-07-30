@@ -137,6 +137,9 @@ footer{
  a{
   color: white;
   font-size: 16px;
+  &:hover{
+    opacity: 0.6;
+  }
  }
 }
 .icon{
@@ -162,6 +165,9 @@ footer{
   }
   a{
     color: white;
+    &:hover{
+      opacity: 0.6;
+    }
   }
 }
 .copyright{
@@ -170,6 +176,9 @@ footer{
   display: flex;
   justify-content: space-between;
   padding: 32px 0;
+  a:hover{
+    opacity: 0.6;
+  }
 }
 .service-footer{
   display: flex;
