@@ -252,6 +252,16 @@
            justify-content: center;
         }
   }
+  .recommend{
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    li{
+        width: 45%;
+    }
+  }
   .suggest{
     ul{
         display: flex;
