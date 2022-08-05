@@ -1,0 +1,80 @@
+@import url(./_reset.scss);
+
+.store{
+    h1{
+        margin-top: 96px;
+        margin-bottom: 33px;
+        font-size: 48px;
+        font-weight: bold;
+        position: relative;
+        padding-left: 20px;
+        &::before {
+            content:'';
+            position: absolute;
+            width: 10px;
+            height: 72px;
+            top:0;
+            left:0;
+            background-color:#9F1213;
+            margin-right: 16px;
+          }
+    }
+}
+.store-area{
+    display: flex;
+    margin-bottom: 41px;
+    h4{
+        font-size: 24px;
+        margin-right: 16px;
+    }
+    select{
+        width: 304px;
+        font-size: 18px;
+        padding: 6px 12px;
+    }
+}
+.shop-news{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -12px;
+    h3{
+        font-size: 24px;
+        padding: 8px 24px;
+        border: 1px solid #00000020;
+    }
+}
+.shop-news-item{
+    width: 30%;
+    margin: 0 12px 48px;
+}
+.information{
+    border: 1px solid #00000020;
+    padding: 16px 24px;
+    a{
+        color: black;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+    li{
+        display: flex;
+        margin-bottom: 8px;
+        font-size: 20px;
+        span{
+            margin-right: 11px;
+        }
+         }
+    
+
+    }
+
+.shop-btn{
+    background-color: black;
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 16px;
+    &:hover{
+        opacity: 0.6;
+    }
+}
