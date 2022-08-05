@@ -238,6 +238,7 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
+            margin: 0 auto;
         }
     }
 
@@ -259,7 +260,8 @@
         justify-content: center;
     }
     li{
-        width: 45%;
+            width: 98%;
+            margin: 0 auto 16px;
     }
   }
   .suggest{
@@ -284,5 +286,8 @@
   }
   .agree{
    margin-bottom: 16px;
+  }
+  .recommend{
+ 
   }
 }
