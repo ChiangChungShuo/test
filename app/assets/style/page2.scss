@@ -3,7 +3,6 @@
 .container {
     max-width: 1320px;
     margin: 0 auto;
-    padding: 0 12px;
   }
 .pd150{
     padding: 24px 150px;
@@ -139,12 +138,14 @@
 }
 
 @media screen and (max-width:767px){
-    .menu{
-        max-width: 100%;
-    }
-    .menu-txt a{
-        padding: 16px 48px;
-        font-size: 24px;
+ 
+    .menu-txt{
+        display: flex;
+        justify-content: center;
+        a{
+         padding: 16px 48px 16px 48px;
+        font-size: 16px;
+        }
     }
     .option{
         display: flex;
