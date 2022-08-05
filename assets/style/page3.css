@@ -43,7 +43,7 @@
 
 .product h3 {
   text-align: center;
-  font-size: 36px; }
+  font-size: 32px; }
 
 .product img {
   width: 306px;
@@ -83,6 +83,9 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 32px; }
 
 .option-txt {
@@ -139,9 +142,7 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
-  .menu-pic .pic1 {
-    display: none; }
-  .nextpage {
-    margin-top: 80px; } }
+  .menu-pic .pic3 {
+    display: none; } }
 
-/*# sourceMappingURL=page2.css.map */
+/*# sourceMappingURL=page3.css.map */

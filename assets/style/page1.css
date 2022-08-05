@@ -227,7 +227,8 @@
         flex-wrap: wrap;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center; }
+            justify-content: center;
+    margin: 0 auto; }
   .joint {
     background-image: url(../images/index-bg-md.png); }
     .joint li {
@@ -251,7 +252,8 @@
         -ms-flex-pack: center;
             justify-content: center; }
   .recommend li {
-    width: 45%; }
+    width: 98%;
+    margin: 0 auto 16px; }
   .suggest ul {
     display: -webkit-box;
     display: -ms-flexbox;
