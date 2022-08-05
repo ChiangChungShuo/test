@@ -1,9 +1,5 @@
 @import url(./_reset.scss);
 
-.container {
-    max-width: 1320px;
-    margin: 0 auto;
-  }
 .pd150{
     padding: 24px 150px;
 }
@@ -15,15 +11,20 @@
 }
 
 .menu-txt{
-        display: flex;
-        text-align: center;
+    display: flex;
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
     li{
+        width: 100%;
+        text-align: center;
         border: 1px solid #DCDCDC;
     }
     a{
        font-size: 32px;
        color: black;
        font-weight: 500;
+       padding: 24px 0;
        display: block;
        width: auto;
        &:hover{
@@ -139,20 +140,20 @@
 
 @media screen and (max-width:767px){
  
-    .menu-txt{
-        display: flex;
-        justify-content: center;
-        a{
-         padding: 16px 48px 16px 48px;
+    .menu-txt a{
         font-size: 16px;
-        }
     }
     .option{
         display: flex;
         justify-content: center;
     }
-
+    .menu-pic{
+        .pic1{
+            display: none;
+        }
+    }
     .nextpage{
         margin-top: 80px;
     }
+
 }
