@@ -20,7 +20,15 @@
           }
     }
 }
+.content{
+    display: flex;
+}
+.map{
+    width: 746px;
+    height: 414px;
+}
 .store-area{
+
     display: flex;
     margin-bottom: 41px;
     h4{
@@ -36,7 +44,7 @@
 .shop-news{
     display: flex;
     flex-wrap: wrap;
-    margin: 0 -12px;
+    margin-right: 24px;
     h3{
         font-size: 24px;
         padding: 8px 24px;
@@ -44,8 +52,11 @@
     }
 }
 .shop-news-item{
-    width: 30%;
-    margin: 0 12px 48px;
+    margin-bottom: 80px;
+    img{
+        width: 526px;
+        height: 224px;
+    }
 }
 .information{
     border: 1px solid #00000020;
@@ -64,22 +75,9 @@
             margin-right: 11px;
         }
          }
-    
-
     }
 
-.shop-btn{
-    background-color: black;
-    color: white;
-    display: block;
-    text-align: center;
-    padding: 16px;
-    &:hover{
-        opacity: 0.6;
-    }
-}
-
-@media screen and (max-width:767px) {
+@media screen and (max-width: 767px) {
     .store{
         h1{
             font-size: 24px;
@@ -98,7 +96,17 @@
             width: 276px;
         }
     }
-.shop-news-item{
-    width: 100%;
-}
+    .shop-news{
+        width: 100%;
+        margin-right: 0;
+    }
+    .content{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .map{
+        margin-bottom: 64px;
+        width: 100%;
+    }
 }

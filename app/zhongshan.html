@@ -1,0 +1,51 @@
+---
+title: 門市據點
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+mycss: zhongshan.css
+---
+
+<head>
+  <div class="store container">
+    <h1>門市據點</h1>
+    <div class="store-area">
+      <h4>選擇分店</h4>
+      <select>
+        <option value="">台北中山旗艦店</option>
+        <option value="">台北綠園店</option>
+        <option value="">台中清水旗艦店</option>
+        <option value="">高雄中正形象店</option>
+        <option value="">高雄夢時代店</option>
+      </select>
+    </div>
+  </div>
+
+  <section>
+    <div class="content container">
+      <ul class="shop-news">
+        <li class="shop-news-item">
+          <img src="./assets/images/store-1.png" alt="" />
+          <h3>台北中山旗艦店</h3>
+          <ul class="information">
+            <li>
+              <a href="tel:+88620001234">
+                <span class="material-symbols-outlined"> call </span
+                >電話：(02)000-1234</a
+              >
+            </li>
+            <li>
+              <span class="material-symbols-outlined"> schedule </span
+              >營業時間：10:00-21:00
+            </li>
+            <li>
+              <span class="material-symbols-outlined"> location_on </span>
+              <p>地址：台北市中山區南京東路25巷2-1號</p>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <img class="map" src="./assets/images/map.png" alt="" />
+    </div>
+  </section>
+</head>
