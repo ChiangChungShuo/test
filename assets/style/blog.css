@@ -1,0 +1,27 @@
+@import url(./_reset.scss);
+.blog h1 {
+  margin-top: 96px;
+  margin-bottom: 32px;
+  font-size: 48px;
+  font-weight: bold;
+  position: relative;
+  padding-left: 16px; }
+  .blog h1::before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 72px;
+    top: 0;
+    left: 0;
+    background-color: #9F1213;
+    margin-right: 16px; }
+
+.blog-nav li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .blog-nav li img {
+    width: 636px;
+    height: 400px; }
+
+/*# sourceMappingURL=blog.css.map */
