@@ -51,8 +51,8 @@ table {
 img{
 vertical-align: bottom;
 max-width:100%;
-
 }
+
 .container {
   margin: 0 auto;
   max-width: 1320px;
@@ -69,6 +69,7 @@ header{
 .logo{
   width: 80px;
 }
+
 .header-menu{
   display: flex;
   font-size: 20px;
@@ -80,9 +81,11 @@ header{
     }
   }
 }
+
 .header-menu li:hover{
   background-color: #ca130d;
 }
+
 @media screen and (max-width:767px) {
   .wrap{
     flex-direction: column;
@@ -189,6 +192,7 @@ footer{
 .pr-48{
   padding-right: 48px;
 }
+
 @media screen and (max-width:767px) {
   .nav{
     padding: 24px 0;
