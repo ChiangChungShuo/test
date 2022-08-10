@@ -163,7 +163,7 @@ nav {
       font-size: 16px; }
     .blog-txt p {
       display: none; }
-    .blog-txt a {
+    .blog-txt .more {
       display: none; }
   .nextpage {
     margin: 64px 0; } }
