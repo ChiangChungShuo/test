@@ -116,4 +116,35 @@ main {
     font-size: 24px;
     font-weight: bold; }
 
+@media screen and (max-width: 767px) {
+  .blog-menu {
+    text-align: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end; }
+    .blog-menu ul li a {
+      font-size: 16px; }
+    .blog-menu span {
+      display: none; }
+  .pagination a {
+    font-size: 16px; }
+  .pagination-txt {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    margin-bottom: 64px; }
+    .pagination-txt h1 {
+      font-size: 24px; }
+    .pagination-txt h3 {
+      font-size: 16px;
+      margin-bottom: 16px; }
+    .pagination-txt li {
+      margin-right: 0;
+      margin-bottom: 16px; }
+  .hashtag {
+    display: none; }
+  .share {
+    display: none; } }
+
 /*# sourceMappingURL=special.css.map */
