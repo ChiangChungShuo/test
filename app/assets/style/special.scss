@@ -22,11 +22,11 @@ nav{
     span{
         font-size: 30px;
         color: #fff;
-   padding-top: 13px;
-   &:hover{
-    opacity: 0.6;
-}
-    }
+         padding-top: 13px;
+         &:hover{
+             opacity: 0.6;
+                }
+         }
 }
 main{
     display: flex;
@@ -119,5 +119,53 @@ main{
             font-weight: bold;
            }
         }
+    }
+}
+
+@media screen and (max-width:767px) {
+    .blog-menu{
+        text-align: center;
+        justify-content: end;
+        ul{
+            li{
+                a{
+                    font-size: 16px;
+                }
+            }
+        }
+        span{
+            display: none;
+        }
+    }
+
+    .pagination{
+        a{
+            font-size: 16px;
+        }
+    }
+    .pagination-txt{
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 64px;
+        h1{
+            font-size: 24px;
+        }
+        h3{
+            font-size: 16px;
+            margin-bottom: 16px;
+        }
+        li{
+            margin-right: 0;
+            margin-bottom: 16px;
+        }
+    }
+
+    .hashtag{
+        display: none;
+    }
+
+    .share{
+        display: none;
+        
     }
 }
