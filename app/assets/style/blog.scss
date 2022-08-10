@@ -24,7 +24,7 @@ nav{
         color: #fff;
    padding-top: 13px;
    &:hover{
-    opacity: 0.6;
+    opacity: 0.7;
 }
     }
 }
@@ -65,6 +65,9 @@ nav{
      h2{
         font-size: 32px;
         color: #650300;
+        &:hover{
+            opacity: 0.6;
+        }
     }
     h3{
         display: flex;
