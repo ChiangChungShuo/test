@@ -27,7 +27,7 @@ nav {
     color: #fff;
     padding-top: 13px; }
     .blog-menu span:hover {
-      opacity: 0.6; }
+      opacity: 0.7; }
 
 .blog h1 {
   margin-top: 96px;
@@ -67,6 +67,8 @@ nav {
   .blog-txt h2 {
     font-size: 32px;
     color: #650300; }
+    .blog-txt h2:hover {
+      opacity: 0.6; }
   .blog-txt h3 {
     display: -webkit-box;
     display: -ms-flexbox;
