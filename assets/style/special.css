@@ -118,12 +118,11 @@ main {
 
 @media screen and (max-width: 767px) {
   .blog-menu {
-    padding: 0;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
     .blog-menu ul li a {
-      padding: 12px 25px;
+      padding: 12px 10px;
       font-size: 16px; }
     .blog-menu span {
       display: none; }
