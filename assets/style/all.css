@@ -25,16 +25,13 @@ footer, header, hgroup, menu, nav, section {
 
 body {
   line-height: 1.5;
-  font-family: sans-serif, 'Noto Sans TC'; }
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", 'Noto Sans TC', Arial, sans-serif; }
 
 ol, ul {
   list-style: none; }
 
 blockquote, q {
   quotes: none; }
-
-a {
-  text-decoration: none; }
 
 blockquote:before, blockquote:after,
 q:before, q:after {
@@ -49,9 +46,13 @@ table {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
+a {
+  text-decoration: none; }
+
 img {
-  vertical-align: bottom;
-  max-width: 100%; }
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto; }
 
 .container {
   margin: 0 auto;
