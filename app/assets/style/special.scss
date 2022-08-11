@@ -124,17 +124,14 @@ main{
 
 @media screen and (max-width:767px) {
     .blog-menu{
-    padding: 0;
-     
         justify-content: center;
-        ul{
+        ul{   
             
             li{
-
+             
                 a{
-
-                   padding: 12px 25px;
-                    font-size: 16px;
+                padding: 12px 10px;
+                font-size: 16px;
                 }
             }
         }
