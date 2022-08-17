@@ -1279,17 +1279,9 @@ main {
     padding: 0; }
     .menu-txt a {
       font-size: 16px; }
-  .option {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    row-gap: 24px; }
-    .option li {
-      width: 100%; }
-    .option img {
+  .product .option li {
+    width: 100%; }
+    .product .option li img {
       width: 100%; }
   .menu-pic .pic1 {
     display: none; }
