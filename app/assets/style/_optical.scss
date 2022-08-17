@@ -143,19 +143,19 @@
                 line-height: 36px;
                 a{
                     padding: 16px 0;
-}
-}
-}
-}
-    .product{
-    .option{    
-        padding:0 24px;
-        li{ 
-            width: 48%;
+                }
+            }
+        }
     }
-}
-}
-}
+    .product{
+            .option{    
+                padding:0 24px;
+                li{ 
+                    width: 48%;
+                 }
+            }
+        }
+    }
 @media screen and (max-width:767px){
     .menu{
         padding: 0;
@@ -167,17 +167,17 @@
         }
  
     }
-    .option{
-        display: flex;
-        justify-content: center;
-       row-gap: 24px;
+    .product{
+        .option{
         li{
-        width: 100%;
-       }
-       img{
-        width: 100%;
-       }
+            width: 100%;
+            img{
+                width: 100%;
+              }
+         }
+        
     }
+}
     .menu-pic{
         .pic1{
             display: none;
