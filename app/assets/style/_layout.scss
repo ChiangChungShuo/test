@@ -13,6 +13,9 @@
   }
   .logo{
     width: 80px;
+    img{
+      width: 100%;
+    }
   }
   
   .header-menu{
@@ -35,8 +38,7 @@
   @media screen and (max-width:767px) {
     .wrap{
       flex-direction: column;
-      padding-right: 0;
-      padding-left: 0;
+      padding: 0;       
     }
     .logo{
       padding: 12px 0;
@@ -59,6 +61,7 @@
     }
   }
   }
+
   .call{
     color: white;
   }
@@ -108,7 +111,9 @@
   }
   .tel{
     font-size: 36px;
+    
     span{
+      vertical-align: middle;
       font-size: 36px;
       padding-right: 22px;
     }
@@ -138,8 +143,8 @@
   .pr-48{
     padding-right: 48px;
   }
-  
-  @media screen and (max-width:767px) {
+
+  @media screen and (max-width:768px) {
     .nav{
       padding: 24px 0;
     }
@@ -151,14 +156,14 @@
      margin-left: 8px;
     }
    img{
-    max-width: 24px;
-   }
+    max-width:60%;
+    }
    }
   .tel{
     font-size: 16px;
     span{
       font-size: 16px;
-      padding-right: 11px;
+      padding-right: 1px;
     }  
   }
   .copyright{

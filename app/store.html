@@ -9,14 +9,14 @@ mycss: store.css
 <head>
   <div class="store container">
     <h1>門市據點</h1>
-    <div class="store-area">
-      <h4>選擇地區</h4>
-      <select>
-        <option value="">台北市</option>
-        <option value="">台中市</option>
-        <option value="">高雄市</option>
+    <form class="store-area">
+      <label for="area">選擇地區</label>
+      <select id="area" name="area">
+        <option value="taipei">台北市</option>
+        <option value="taichung">台中市</option>
+        <option value="kaohsiung">高雄市</option>
       </select>
-    </div>
+    </form>
   </div>
 
   <section>

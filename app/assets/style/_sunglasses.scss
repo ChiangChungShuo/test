@@ -7,7 +7,9 @@
 .pd119{
     padding: 24px 119px;
 }
-
+.pic4{
+    display: none;
+}
 .menu-txt{
     display: flex;
     padding: 0 15px;
@@ -58,7 +60,7 @@
     p{
         font-size: 24px;
     }
-    span{
+    .money{
         color: #AA0601;
         font-size: 24px;
         font-weight: 500;
@@ -83,10 +85,15 @@
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 32px;
-}
-.option-txt{
-    margin-bottom: 80px;
-    margin-right: 24px;
+    row-gap: 80px;
+    column-gap: 24px;
+    li{
+        width: 32%;
+        img{
+            width: 100%;
+        }
+    }
+
 }
 .nextpage{
     margin-bottom: 80px;
@@ -147,11 +154,19 @@
     }
     .option{
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
+        row-gap: 24px;
+        li{
+            width: 100%;
+        }
     }
     .menu-pic{
         .pic3{
             display: none;
+        }
+        .pic4{
+            display: block;
         }
     }
 }

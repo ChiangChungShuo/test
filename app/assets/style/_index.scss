@@ -45,7 +45,7 @@
   }
   .guild{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     img{
         max-width: 100px;
         padding-bottom: 16px;
@@ -75,27 +75,34 @@
         margin-bottom: 48px;
         text-align: center;
     }
-    ul{
+}
+    .classic-txt{
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+        padding-bottom: 80px;
+    li{
+        width: 30%;
+        &:nth-child(2) {
+            margin: 0 24px;
+        }
+        img{
+            width: 100%;
+            &:hover{
+                opacity: 0.6;
+              }
+        }
+        p{
+            text-align: center;
+                font-size: 48px;
+                line-height: 72px;
+                color: #AA0601;
+                font-style: italic;
+                font-weight: 900;
+                font-family: Roboto;
+                padding-top: 8px;
+        }
     }
-    img{
-        min-width: 416px;
-        height: 416px;
-        padding-right: 24px;
-        padding-bottom: 8px;
-        &:hover{
-            opacity: 0.6;
-          }
-    }
-    p{
-        font-size: 48px;
-        font-weight: bold;
-        color: #AA0601;
-        text-align: center;
-        margin-bottom: 80px;
-    }
-  }
+}
   .joint{
     background-image: url(../images/index-bg-sm.png);
     background-size: cover;
@@ -137,36 +144,46 @@
     }
     ul{
         display: flex;
-    }
-    li{
-        border: 1px solid #DEE2E6;
-        box-shadow: 1px 2px 3px 2px #00000029;
-        margin-right: 24px;
         margin-bottom: 80px;
+        li{
+            border: 1px solid #DEE2E6;
+            box-shadow: 1px 2px 3px 2px #00000029;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            margin: 0 12px;
+        }
+    }
+    
+    div {
+        flex-grow: 1;
+        padding: 16px;
+        text-align: left;
+        p {
+            font-size: 16px;
+            line-height: 24px;
+            padding-top: 8px;
+            padding-bottom: 72px;
+        }
+    }
+    time {
+        padding-left: 16px;
         padding-bottom: 16px;
-    }
-    p{
-        font-size: 16px;
-    }
-    .name{
-        padding: 16px 0 8px 16px;
-    }
-    .ps{
-        padding-left: 16px;
-        padding-bottom: 72px;
-    }
-    span{
         font-size: 14px;
-        color:#707070 ;
-        padding-left: 16px;
+        line-height: 21px;
+        color: #707070;
     }
+    img {
+        width: 100%;
+    }
+
 }
 .phone{
    background-color:#FBF2F2 ;
    padding: 80px 0;
 }
 .contact{
-    max-width: 636px;
+    max-width: 626px;
     margin: 0 auto;
     h2{
         font-size: 48px;
@@ -176,6 +193,7 @@
         padding-bottom: 48px;
     }
     p{
+        margin-bottom: 24px;
         font-size: 20px;
         color: black;
     }
@@ -190,8 +208,9 @@
     display: flex;
     align-items: flex-start;
 }
-.center{
+.confirm{
     display: block;
+    border: none;
     text-align: center;
     background-color: #AA0601;
     margin: 0 auto;
@@ -204,8 +223,8 @@
       }
 }
 .w636{
-        width: 636px;
-        height: 36px;
+    width: 636px;
+    height: 36px;
 }
 .h136{
     width: 636px;
@@ -223,6 +242,36 @@
     font-size: 16px;
     padding-top: 16px;
 }
+@media screen and (max-width:992px){
+    .guild{
+        display: flex;
+        flex-wrap: wrap;
+        li{
+            width: 40%;
+        }
+    }
+    .classic-txt{
+        padding-top: 48px;
+        padding-bottom: 80px;
+        max-width: 100%;
+        flex-wrap: wrap;
+        li{
+            width: 90%;
+        }
+    }
+    .recommend{
+        ul{
+            padding-bottom: 80px;
+            max-width: 100%;
+            flex-wrap: wrap;
+            li{
+                flex-grow: 1;
+                width: 46%;
+                margin-bottom: 24px;
+            }
+        }
+    }
+}
 @media screen and (max-width:767px){
     .main{
         background-image: url(../images/home-header-sm.png);
@@ -230,15 +279,30 @@
   
     .guild{
         flex-wrap: wrap;
+        li{
+            width: 100%;
+            justify-content: center;
+            text-align: center;
+            p{
+          text-align: center;
+          width: auto;
+            }
+        }
     }
-    .classic{
-        .classic-txt{
+     .classic-txt{
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             margin: 0 auto;
+            align-items: center;
+            width: auto;
+            li{
+                width: auto;
+                img{
+                    width: auto;
+                }
+            }
         }
-    }
 
     .joint{
         background-image: url(../images/index-bg-md.png);
@@ -258,23 +322,13 @@
         justify-content: center;
     }
     li{
-            width: 98%;
+            width: 100%;
             margin: 0 auto 16px;
     }
   }
-  .suggest{
-    ul{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    li{
-        width: 46%;
-    }
-  }
+
   .phone{
      padding: 40px 0;
-     max-width: 768px;
     h2{
         padding-bottom: 24px;
     }
@@ -284,8 +338,5 @@
   }
   .agree{
    margin-bottom: 16px;
-  }
-  .recommend{
- 
   }
 }

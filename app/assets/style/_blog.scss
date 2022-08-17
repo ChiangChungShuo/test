@@ -30,21 +30,17 @@ nav{
 
 .blog{
     h1{
-        margin-top: 96px;
-        margin-bottom: 32px;
+        padding-top: 96px;
+        padding-bottom: 32px;
         font-size: 48px;
+        line-height: 72px;
+        color: #000000;
         font-weight: bold;
-        position: relative;
-        padding-left: 16px;
+
         &::before {
-            content:'';
-            position: absolute;
-            width: 10px;
-            height: 72px;
-            top:0;
-            left:0;
-            background-color:#9F1213;
-            margin-right: 16px;
+            padding-left: 16px;
+            content: "";
+            border-left: 5px solid #9F1213;
         }
     }
 }
@@ -53,8 +49,8 @@ nav{
         display: flex;
         margin-bottom: 60px;
         img{
-            width: 636px;
-            height: 400px;
+            width: 50%;
+            height: auto;
             margin-right: 24px;
         }
     }
@@ -141,6 +137,28 @@ nav{
             }
     }
     }
+    @media screen and (max-width:992px){
+        .blog{
+            h1{
+                padding-top: 80px;
+            }
+        }
+        .blog-plan{
+            padding-bottom: 80px;
+            li{
+                padding-bottom: 24px;
+            }
+            .blog-txt{
+                
+            }
+            .blog-btn{
+                a{
+                    display: none;
+                }
+            }
+        }
+    
+    }
     @media screen and (max-width:767px){
         nav{
             display: none;
@@ -160,12 +178,13 @@ nav{
            li{
             flex-direction: column;
             margin-bottom: 24px;
-           }
             img{
                 margin: 0 0 8px;
                 display: block;
-                max-width: 100%;
+                width: 100%;
             }
+           }
+            
         }
         .blog-txt{
             width: 100%;
@@ -182,9 +201,5 @@ nav{
                 display: none;
             }
         
-        }
-        .nextpage{
-          margin: 64px 0;
-
         }
     }

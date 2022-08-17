@@ -91,6 +91,13 @@ main{
         margin-bottom: 80px;
         li{
             display: flex;
+            a{
+                display: flex;
+                color: black;
+                &:hover{
+                    opacity: 0.7;
+                }
+            }
         }
 
     }
