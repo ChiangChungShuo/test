@@ -278,21 +278,23 @@ footer {
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
-  .guild img {
-    max-width: 100px;
-    padding-bottom: 16px; }
-  .guild h3 {
-    color: #650300;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 72px; }
-  .guild p {
-    width: 306px;
-    font-size: 16px;
-    text-align: start;
-    margin-right: 24px;
-    padding-bottom: 80px; }
+          justify-content: space-between;
+  gap: 24px; }
+  .guild li {
+    width: calc((100% - 72px) / 4); }
+    .guild li img {
+      max-width: 100px;
+      padding-bottom: 16px; }
+    .guild li h3 {
+      color: #650300;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 72px; }
+    .guild li p {
+      width: 306px;
+      font-size: 16px;
+      text-align: start;
+      padding-bottom: 80px; }
 
 .classic h2 {
   font-size: 48px;
