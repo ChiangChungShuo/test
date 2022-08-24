@@ -46,23 +46,29 @@
   .guild{
     display: flex;
     justify-content: space-between;
-    img{
-        max-width: 100px;
-        padding-bottom: 16px;
-    }
-    h3{
-        color: #650300;
-        font-weight: bold;
-        font-size: 24px;
-        line-height: 72px;
-    }
+    gap: 24px;
+    li{
+        width: calc((100% - 72px) / 4);
+        img{
+            max-width: 100px;
+            padding-bottom: 16px;
+        }
+        h3{
+            color: #650300;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 72px;
+        }
+        
     p{
         width: 306px;
         font-size: 16px;
         text-align: start;
-        margin-right: 24px;
         padding-bottom: 80px;    
     }
+    }
+   
+    
   }
 
 
